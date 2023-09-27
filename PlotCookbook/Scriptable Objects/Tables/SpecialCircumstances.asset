@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SpecialCircumstances
   m_EditorClassIdentifier: 
   name: Special Circumstances
-  die: 320
+  die: 380
   data:
   - description: Must Work with Villain
     cutoff: 11
@@ -54,4 +54,18 @@ MonoBehaviour:
   - description: Innocent Fulfills Prophesy
     cutoff: 301
   - description: Apparent Villain is a Red herring
-    cutoff: 321
+    cutoff: 326
+  - description: Opening Pandora's Box
+    cutoff: 331
+  - description: Hero Recieves a Trojan Horse
+    cutoff: 341
+  - description: A Major NPC is not What They Seem
+    cutoff: 351
+  - description: Dead NPC Isn't Really Dead
+    cutoff: 356
+  - description: A Secret / Unkown Death is Revealed
+    cutoff: 361
+  - description: Poetic Justice
+    cutoff: 366
+  - description: A False Ending Leads to More
+    cutoff: 380

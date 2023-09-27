@@ -15,25 +15,35 @@ public class PlotElement
 
     private HashSet<string> used = new HashSet<string>();
 
-    public string Roll() {
+    public string[] Roll() {
+        string[] output = new string[2];
         int num;
         if(maxInstances > minInstances) num = UnityEngine.Random.Range(minInstances, maxInstances + 1);
         else num = minInstances;
         if(!canBeZero) num = Mathf.Max(1, num);
-        if(num < 1) return "";
+        if(num < 1) {
+            output[0] = output[1] = "";
+            return output;
+        }
         used.Clear();
         StringBuilder results = new StringBuilder("<B>" + table.Name + ":</B> ");
+        StringBuilder resultsUF = new StringBuilder(table.Name + ": ");
         for(int i = 0; i < num; i++) {
             string result = table.Roll();
             if(allowDuplicates || !used.Contains(result)) {
                 if (i > 0) {
                     results.Append("; ");
+                    resultsUF.Append("; ");
                 }
                 results.Append(result);
+                resultsUF.Append(result);
                 used.Add(result);
             }
         }
         results.Append(Environment.NewLine);
-        return results.ToString();
+        resultsUF.Append(Environment.NewLine);
+        output[0] = results.ToString();
+        output[1] = resultsUF.ToString();
+        return output;
     }
 }

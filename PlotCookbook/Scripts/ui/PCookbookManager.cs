@@ -1,5 +1,7 @@
 using TMPro;
 using UnityEngine;
+using Crosstales;
+using Crosstales.FB;
 
 public class PCookbookManager : MonoBehaviour
 {
@@ -7,7 +9,9 @@ public class PCookbookManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI outputText;
 
     private int generatorSelected = 0;
-    private string lastOutput;
+    private string[] lastOutput;
+
+    readonly string[] extensions = { "txt" };
 
 
     // Start is called before the first frame update
@@ -28,7 +32,7 @@ public class PCookbookManager : MonoBehaviour
         Debug.Log(lastOutput);
         #endif
         //TODO: Normal output forms
-        outputText.SetText(lastOutput);
+        outputText.SetText(lastOutput[0]);
     }
 
 
@@ -37,9 +41,11 @@ public class PCookbookManager : MonoBehaviour
     }
 
 
-    public void Print() {
-        if((lastOutput == null) || (lastOutput.Length < 1)) return;
-
+    public void SaveRstults() {
+        byte[] data = lastOutput[1].CTToByteArray();
+        FileBrowser.Instance.CurrentSaveFileData = data;
+        string path = FileBrowser.Instance.SaveFile("Save Inspiration", "",
+                "PlotIdea", extensions);
     }
 
 
