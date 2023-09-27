@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91964b718a1af3c75a312c887fd5efab, type: 3}
+  m_Name: Archvillian
+  m_EditorClassIdentifier: 
+  name: Main Villain
+  die: 140
+  data:
+  - description: Agent Provacaeur
+    cutoff: 9
+  - description: Advance Agent
+    cutoff: 16
+  - description: Resentful Avenger
+    cutoff: 21
+  - description: Ruthless Conqueror
+    cutoff: 31
+  - description: Insidious Corruptor
+    cutoff: 41
+  - description: Malicious Destroyer
+    cutoff: 51
+  - description: Random Misfortune
+    cutoff: 56
+  - description: Loveable Rogue
+    cutoff: 66
+  - description: Crimnal Organizer
+    cutoff: 76
+  - description: Terrorizing Ravager
+    cutoff: 86
+  - description: Accursed Sufferer
+    cutoff: 91
+  - description: Crazed Cultist
+    cutoff: 101
+  - description: Mustache-Twirling Psychopath
+    cutoff: 111
+  - description: Champion of Evil
+    cutoff: 121
+  - description: Misguided Madman
+    cutoff: 129
+  - description: Callously Indifferent Entity
+    cutoff: 133
+  - description: Desperate Individual
+    cutoff: 137
+  - description: Well-Meaning Fool
+    cutoff: 141

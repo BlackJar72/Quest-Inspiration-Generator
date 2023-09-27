@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91964b718a1af3c75a312c887fd5efab, type: 3}
+  m_Name: Setting
+  m_EditorClassIdentifier: 
+  name: Major Settings
+  die: 200
+  data:
+  - description: Alternate Plain or Dimension
+    cutoff: 6
+  - description: Cosmipolitan City
+    cutoff: 26
+  - description: Exotic Distant Land
+    cutoff: 46
+  - description: Hero's Home Town
+    cutoff: 51
+  - description: On The Road
+    cutoff: 71
+  - description: At Sea
+    cutoff: 81
+  - description: Dangerous Terain
+    cutoff: 91
+  - description: Deep Underground
+    cutoff: 96
+  - description: Under Water
+    cutoff: 101
+  - description: Castle, Tower, Fortress, or Stronghold
+    cutoff: 111
+  - description: Caves / Cavern
+    cutoff: 121
+  - description: Abandoned Mine
+    cutoff: 131
+  - description: Crypt, Tomb, or Catacombs
+    cutoff: 141
+  - description: Temple / Church (Ancient or Modern)
+    cutoff: 151
+  - description: Town or Village
+    cutoff: 161
+  - description: Lost City
+    cutoff: 171
+  - description: Shanty Town
+    cutoff: 176
+  - description: Mansion or Palace
+    cutoff: 185
+  - description: Military Encampment
+    cutoff: 191
+  - description: Legenday Natural Area
+    cutoff: 201

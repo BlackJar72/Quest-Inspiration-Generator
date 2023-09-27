@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91964b718a1af3c75a312c887fd5efab, type: 3}
+  m_Name: SpecialCircumstances
+  m_EditorClassIdentifier: 
+  name: Special Circumstances
+  die: 320
+  data:
+  - description: Must Work with Villain
+    cutoff: 11
+  - description: Mission is a Ruse
+    cutoff: 51
+  - description: NPC Betrayal
+    cutoff: 71
+  - description: Villain Acts as Follower
+    cutoff: 81
+  - description: Villain has Connection to Hero
+    cutoff: 91
+  - description: Wanted by the Law
+    cutoff: 101
+  - description: Artifact Doesn't Work
+    cutoff: 111
+  - description: Extraneous Details
+    cutoff: 121
+  - description: False Path to Quest Item
+    cutoff: 151
+  - description: Ignorant, Crazy, or Misinformed Informant
+    cutoff: 161
+  - description: Legend or Rumor is False
+    cutoff: 201
+  - description: Hero Cursed
+    cutoff: 211
+  - description: No Weappons Mission
+    cutoff: 221
+  - description: Villain Must not be Harmed
+    cutoff: 231
+  - description: Reputation / Relationship Requirement
+    cutoff: 251
+  - description: Race Against Time
+    cutoff: 271
+  - description: Prophesy of Doom
+    cutoff: 281
+  - description: Hero Fulfills Prophesy
+    cutoff: 291
+  - description: Innocent Fulfills Prophesy
+    cutoff: 301
+  - description: Apparent Villain is a Red herring
+    cutoff: 321

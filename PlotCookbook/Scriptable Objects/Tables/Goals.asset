@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91964b718a1af3c75a312c887fd5efab, type: 3}
+  m_Name: Goals
+  m_EditorClassIdentifier: 
+  name: Goals
+  die: 200
+  data:
+  - description: Clear Name
+    cutoff: 6
+  - description: Excape
+    cutoff: 11
+  - description: Explore New Area
+    cutoff: 21
+  - description: Encounter Old Villain
+    cutoff: 26
+  - description: Financial Profit / Treasure
+    cutoff: 36
+  - description: Acquire Power
+    cutoff: 46
+  - description: Rescue NPC
+    cutoff: 56
+  - description: Protect NPC
+    cutoff: 61
+  - description: Retrieve Item
+    cutoff: 66
+  - description: Settle Debt
+    cutoff: 71
+  - description: Thwart Evil Plan
+    cutoff: 96
+  - description: Survival
+    cutoff: 81
+  - description: Win War
+    cutoff: 101
+  - description: Exploring the Unknown
+    cutoff: 111
+  - description: Investigating an Enemy Outpost
+    cutoff: 121
+  - description: Recovering Ruins
+    cutoff: 131
+  - description: Destroying an Ancient Evil
+    cutoff: 141
+  - description: Visiting a Lost Shrine
+    cutoff: 151
+  - description: Fulfilling a Quest
+    cutoff: 161
+  - description: Escaping From Enemies
+    cutoff: 171
+  - description: Rescuing Prisoners
+    cutoff: 181
+  - description: Using a Magic Portal
+    cutoff: 191
+  - description: Finding a Lost Race
+    cutoff: 201

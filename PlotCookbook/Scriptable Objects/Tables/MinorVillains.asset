@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91964b718a1af3c75a312c887fd5efab, type: 3}
+  m_Name: MinorVillains
+  m_EditorClassIdentifier: 
+  name: Minor Villains
+  die: 140
+  data:
+  - description: Resentfiul Avenger
+    cutoff: 6
+  - description: Chief Assassin
+    cutoff: 16
+  - description: Friend with a Dark Secret
+    cutoff: 21
+  - description: Corrupted Hero
+    cutoff: 26
+  - description: Craven Coward
+    cutoff: 31
+  - description: Hard-Eyed Advisor
+    cutoff: 41
+  - description: Interrogator / Inquisitor
+    cutoff: 51
+  - description: Loveable Rogue
+    cutoff: 61
+  - description: Misguided Moralist
+    cutoff: 66
+  - description: Good-Hearted Lover or Child of Villain
+    cutoff: 76
+  - description: The Muscle
+    cutoff: 86
+  - description: Single-Minded Soldier
+    cutoff: 96
+  - description: Snivelling Vizier
+    cutoff: 101
+  - description: Femme Fatale
+    cutoff: 106
+  - description: Money-Hungry Mercenary
+    cutoff: 116
+  - description: Champion of Evil
+    cutoff: 121
+  - description: Useful Idiot
+    cutoff: 126
+  - description: Traitorous Betrayer
+    cutoff: 136
+  - description: Unwilling Pawn
+    cutoff: 136
+  - description: Raving Lunatic
+    cutoff: 141
