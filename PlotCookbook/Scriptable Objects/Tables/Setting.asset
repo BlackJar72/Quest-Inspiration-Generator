@@ -17,7 +17,7 @@ MonoBehaviour:
   data:
   - description: Alternate Plain or Dimension
     cutoff: 6
-  - description: Cosmipolitan City
+  - description: Cosmopolitan City
     cutoff: 26
   - description: Exotic Distant Land
     cutoff: 46
@@ -27,7 +27,7 @@ MonoBehaviour:
     cutoff: 71
   - description: At Sea
     cutoff: 81
-  - description: Dangerous Terain
+  - description: Dangerous Terrain
     cutoff: 91
   - description: Deep Underground
     cutoff: 96
@@ -53,5 +53,5 @@ MonoBehaviour:
     cutoff: 185
   - description: Military Encampment
     cutoff: 191
-  - description: Legenday Natural Area
+  - description: Legendary Natural Area
     cutoff: 201

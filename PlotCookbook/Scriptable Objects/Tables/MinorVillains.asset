@@ -29,7 +29,7 @@ MonoBehaviour:
     cutoff: 41
   - description: Interrogator / Inquisitor
     cutoff: 51
-  - description: Loveable Rogue
+  - description: Lovable Rogue
     cutoff: 61
   - description: Misguided Moralist
     cutoff: 66
@@ -39,7 +39,7 @@ MonoBehaviour:
     cutoff: 86
   - description: Single-Minded Soldier
     cutoff: 96
-  - description: Snivelling Vizier
+  - description: Sniveling Vizier
     cutoff: 101
   - description: Femme Fatale
     cutoff: 106

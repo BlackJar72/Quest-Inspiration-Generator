@@ -17,9 +17,9 @@ MonoBehaviour:
   data:
   - description: Action/Adventure
     cutoff: 41
-  - description: Commedy
+  - description: Comedy
     cutoff: 51
-  - description: Espianage
+  - description: Espionage
     cutoff: 66
   - description: Mystery
     cutoff: 81

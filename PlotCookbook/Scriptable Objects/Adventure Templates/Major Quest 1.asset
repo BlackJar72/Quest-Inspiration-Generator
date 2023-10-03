@@ -23,7 +23,7 @@ MonoBehaviour:
     minInstances: -1
     maxInstances: 2
     canBeZero: 0
-    allowDuplicates: 1
+    allowDuplicates: 0
   - table: {fileID: 11400000, guid: 38350a524209b78dc803a7a9adb9714f, type: 2}
     minInstances: -1
     maxInstances: 2
