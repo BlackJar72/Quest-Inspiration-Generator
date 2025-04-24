@@ -20,7 +20,7 @@ public class Table : ScriptableObject
     public string Roll() {
         int roll = Random.Range(0, die) + 1;
         for(int i = 0; i < data.Count; i++) {
-            if(data[i].IsFount(roll)) return data[i].description;
+            if(data[i].IsFound(roll)) return data[i].description;
         }
         return data[data.Count - 1].description;
     }
