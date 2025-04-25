@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e1c0c123a5b75bb4176bb1303851d, type: 3}
+  m_Name: Excitable
+  m_EditorClassIdentifier: 
+  description: Excitable
+  requiremnt:
+  - trait: 2
+    value: 6
+    lessThan: 0
+  - trait: 4
+    value: 2
+    lessThan: 0
+  conflicting:
+  - {fileID: 11400000, guid: ae2b753c55a16e461ae303484e289b36, type: 2}
+  - {fileID: 11400000, guid: bfe4e1a990964178eb11a51a879fa474, type: 2}

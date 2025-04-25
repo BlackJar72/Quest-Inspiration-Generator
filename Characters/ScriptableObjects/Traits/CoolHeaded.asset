@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e1c0c123a5b75bb4176bb1303851d, type: 3}
   m_Name: CoolHeaded
   m_EditorClassIdentifier: 
-  description: Cool Headed
+  description: Cool Under Preasure
   requiremnt:
   - trait: 4
     value: 5
@@ -20,4 +20,11 @@ MonoBehaviour:
   - trait: 3
     value: 5
     lessThan: 1
-  conflicting: []
+  conflicting:
+  - {fileID: 11400000, guid: 8bc25b20539088e8c96eced2fabf6b52, type: 2}
+  - {fileID: 11400000, guid: 2ddb8cc442985d0888342d82a33f6e71, type: 2}
+  - {fileID: 11400000, guid: 821e294ae4f9754c4905f0794da887b0, type: 2}
+  - {fileID: 11400000, guid: 7769d1e78b4d1bedeb09a98ccd69b9e0, type: 2}
+  - {fileID: 11400000, guid: c461067bbea25194296dc2d42faa3672, type: 2}
+  - {fileID: 11400000, guid: ee7455a80fe991ba18bff2d1732427f6, type: 2}
+  - {fileID: 11400000, guid: 9149a827727d94c6bb540e6c63ca8154, type: 2}

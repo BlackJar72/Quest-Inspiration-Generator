@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e06e1c0c123a5b75bb4176bb1303851d, type: 3}
-  m_Name: Crude SenseOfHumor
+  m_Name: Emotional
   m_EditorClassIdentifier: 
-  description: Crude Sense of Humor
+  description: Emotional
   requiremnt:
-  - trait: 3
-    value: 7
-    lessThan: 1
-  conflicting: []
+  - trait: 2
+    value: 5
+    lessThan: 0
+  conflicting:
+  - {fileID: 11400000, guid: ae2b753c55a16e461ae303484e289b36, type: 2}
+  - {fileID: 11400000, guid: 5375acbf9748de0eda7f1412442e6d04, type: 2}

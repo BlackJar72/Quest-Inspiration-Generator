@@ -19,3 +19,6 @@ MonoBehaviour:
     lessThan: 0
   conflicting:
   - {fileID: 11400000, guid: 9134e49ffaa12ebfda5a87f7649f8371, type: 2}
+  - {fileID: 11400000, guid: 69e947d17567c2683ad219155630c703, type: 2}
+  - {fileID: 11400000, guid: 9d9e9a51f7a1bd65b8240b9cda2f78e3, type: 2}
+  - {fileID: 11400000, guid: bfe4e1a990964178eb11a51a879fa474, type: 2}

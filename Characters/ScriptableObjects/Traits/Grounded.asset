@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e1c0c123a5b75bb4176bb1303851d, type: 3}
+  m_Name: Grounded
+  m_EditorClassIdentifier: 
+  description: Grounded
+  requiremnt:
+  - trait: 4
+    value: 4
+    lessThan: 1
+  conflicting:
+  - {fileID: 11400000, guid: 7a5412e963f4586f99c669c04a7e6f3e, type: 2}
+  - {fileID: 11400000, guid: b3b94bf546550d0238615dce372c8be1, type: 2}
+  - {fileID: 11400000, guid: acfa857dd861675a981c7580de9b5123, type: 2}
+  - {fileID: 11400000, guid: 17c2ee35b2933aab7b0c8d59ee723f26, type: 2}
+  - {fileID: 11400000, guid: 9b44e21507c723591a42d7d3d5c28924, type: 2}

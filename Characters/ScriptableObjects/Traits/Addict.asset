@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Alcoholic / Addict
   requiremnt: []
-  conflicting: []
+  conflicting:
+  - {fileID: 11400000, guid: 9d1f6390961f67f729591562cf6d36a8, type: 2}

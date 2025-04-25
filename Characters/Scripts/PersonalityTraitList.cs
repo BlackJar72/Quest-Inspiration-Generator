@@ -1,5 +1,11 @@
 using System.Collections.Generic;
+using UnityEditor;
+
+#if UNITY_EDITOR
 using UnityEngine;
+using UnityEngine.InputSystem.Interactions;
+#endif
+
 
 
 [System.Serializable]
@@ -9,8 +15,13 @@ public class PersonalityTraitList : ScriptableObject {
     [SerializeField] List<PersonalityTrait> data;
 
 
-    void Start() => Init();
+    void Awake()
+    {
+        Init();
+    } 
 
+
+    [ContextMenu("Initialize")]
     public void Init() {
         data.Sort();
     }

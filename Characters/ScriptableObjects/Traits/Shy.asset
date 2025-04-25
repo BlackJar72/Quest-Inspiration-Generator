@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e1c0c123a5b75bb4176bb1303851d, type: 3}
+  m_Name: Shy
+  m_EditorClassIdentifier: 
+  description: Shy
+  requiremnt:
+  - trait: 2
+    value: 6
+    lessThan: 1
+  - trait: 4
+    value: 4
+    lessThan: 0
+  conflicting:
+  - {fileID: 11400000, guid: a99a8254e91ea2b73b9f3a51a8c64fc5, type: 2}
+  - {fileID: 11400000, guid: 99c9ebe24c44eede9980672d3bbcd6bc, type: 2}
+  - {fileID: 11400000, guid: 8e22250ab10f5cd0fadd9e2cabefb298, type: 2}
+  - {fileID: 11400000, guid: 050fd35c34dac86aebe6b9f9df6f7bf2, type: 2}

@@ -17,4 +17,5 @@ MonoBehaviour:
   - trait: 2
     value: 4
     lessThan: 0
-  conflicting: []
+  conflicting:
+  - {fileID: 11400000, guid: 8d1e135f9bf2da351acd3471040b6172, type: 2}
