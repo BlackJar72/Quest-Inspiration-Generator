@@ -10,20 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e06e1c0c123a5b75bb4176bb1303851d, type: 3}
-  m_Name: Promiscuous
+  m_Name: Homebody
   m_EditorClassIdentifier: 
-  description: Promiscuous
+  description: Homebody
   requiremnt:
   - trait: 2
-    value: 5
+    value: 6
+    lessThan: 1
+  - trait: 1
+    value: 3
     lessThan: 0
   - trait: 0
-    value: 4
-    lessThan: 0
-  - trait: 4
-    value: 4
-    lessThan: 0
+    value: 7
+    lessThan: 1
   conflicting:
-  - {fileID: 11400000, guid: 78e2a17104ba84167a04b1856c3e00be, type: 2}
-  - {fileID: 11400000, guid: 6bd076513f47f162cb2fd8e55ccf4008, type: 2}
-  - {fileID: 11400000, guid: 74c8a0c6a6ec67440be39cf27a15482d, type: 2}
+  - {fileID: 11400000, guid: 69e947d17567c2683ad219155630c703, type: 2}

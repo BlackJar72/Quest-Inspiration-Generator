@@ -23,3 +23,4 @@ MonoBehaviour:
   conflicting:
   - {fileID: 11400000, guid: 63ac82ed98bbb58809a39582e7d05dfd, type: 2}
   - {fileID: 11400000, guid: 232ad719594c5a4ac937e3b7257d9e32, type: 2}
+  - {fileID: 11400000, guid: 582708d8a39e3b3cdbe57b18e099ae51, type: 2}

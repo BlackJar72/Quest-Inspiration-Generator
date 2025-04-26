@@ -10,20 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e06e1c0c123a5b75bb4176bb1303851d, type: 3}
-  m_Name: Promiscuous
+  m_Name: Wise
   m_EditorClassIdentifier: 
-  description: Promiscuous
+  description: Wise
   requiremnt:
-  - trait: 2
+  - trait: 0
     value: 5
     lessThan: 0
-  - trait: 0
-    value: 4
+  - trait: 1
+    value: 5
+    lessThan: 0
+  - trait: 3
+    value: 5
     lessThan: 0
   - trait: 4
-    value: 4
-    lessThan: 0
+    value: 7
+    lessThan: 1
   conflicting:
-  - {fileID: 11400000, guid: 78e2a17104ba84167a04b1856c3e00be, type: 2}
-  - {fileID: 11400000, guid: 6bd076513f47f162cb2fd8e55ccf4008, type: 2}
-  - {fileID: 11400000, guid: 74c8a0c6a6ec67440be39cf27a15482d, type: 2}
+  - {fileID: 11400000, guid: 0b14e18ea566ed77288c7ea7da38c7b8, type: 2}
+  - {fileID: 11400000, guid: 7df2e535c4294f4849318efd034802f7, type: 2}
+  - {fileID: 11400000, guid: c4dd7404ff4bbfd9fa056a258d83a020, type: 2}
+  - {fileID: 11400000, guid: 412ce7d447afbabe4a4106183541a70f, type: 2}
