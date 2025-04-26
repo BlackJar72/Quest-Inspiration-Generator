@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e1c0c123a5b75bb4176bb1303851d, type: 3}
   m_Name: SewingWeaving
   m_EditorClassIdentifier: 
-  description: Sewing / Weaving
+  description: Sewing or Weaving
   requiremnt:
   - trait: 1
     value: 4

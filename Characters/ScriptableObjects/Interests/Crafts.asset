@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e1c0c123a5b75bb4176bb1303851d, type: 3}
   m_Name: Crafts
   m_EditorClassIdentifier: 
-  description: Crafts / Crafting
+  description: Crafts
   requiremnt: []
   conflicting: []

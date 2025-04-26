@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e1c0c123a5b75bb4176bb1303851d, type: 3}
   m_Name: Eloquent
   m_EditorClassIdentifier: 
-  description: Eloquent / Poetic
+  description: Poetic
   requiremnt: []
   conflicting:
   - {fileID: 11400000, guid: f8ff233350bf9bad99f79284eb674d4f, type: 2}

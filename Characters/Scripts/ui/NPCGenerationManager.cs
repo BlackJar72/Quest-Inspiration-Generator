@@ -1,3 +1,4 @@
+using System.Text;
 using Crosstales;
 using Crosstales.FB;
 using TMPro;
@@ -35,7 +36,7 @@ public class NPCGenerationManager : MonoBehaviour {
 
     private Personality personality;
 
-    private string[] lastOutput;
+    private StringBuilder[] lastOutput;
 
     readonly string[] extensions = { "txt" };
 
@@ -99,24 +100,27 @@ public class NPCGenerationManager : MonoBehaviour {
 
     public void GenerateCharacter() {
         personality = new Personality(traitList, minTraits, maxTraits);
-        if(bothChance < Random.Range(0, 100)) {
-            if(Random.Range(0, 5) == 0) personality.AddProfession(profesionList, 1,2);
-            else personality.AddProfession(profesionList, 1, 1);
-            if(Random.Range(0, 2) == 0) personality.AddProfession(profesionList, 1,2);
-            else personality.AddProfession(profesionList, 1, 1);
+        personality.AddIntersts(interestList, minInterest, maxInterest);
+        if(Random.Range(0, 100) < bothChance) {
+            personality.AddProfession(profesionList);
+            personality.AddBackground(backgroundList);
         } else {
-            if(proChance < Random.Range(0, 100)) {
-                if(Random.Range(0, 5) == 0) personality.AddProfession(profesionList, 1,2);
-                else personality.AddProfession(profesionList, 1, 1);
+            if(Random.Range(0, 100) < proChance) {
+                personality.AddProfession(profesionList);
             }
-            if(bgChance < Random.Range(0, 100)) {
-                if(Random.Range(0, 2) == 0) personality.AddProfession(profesionList, 1,2);
-                else personality.AddProfession(profesionList, 1, 1);
+            if(Random.Range(0, 100) < bgChance) {
+                personality.AddBackground(backgroundList);
             }
         }
+        lastOutput = personality.GetResults();
         if(narrativeChance < Random.Range(0, 100)) {
             // TODO!!!
         }
+        lastOutput[0].Append("<BR>").Append(System.Environment.NewLine);
+        lastOutput[1].Append(System.Environment.NewLine)
+                     .Append("******************************************************************************************************")
+                     .Append(System.Environment.NewLine);
+        outputText.text = lastOutput[0].ToString();
     }
 
 

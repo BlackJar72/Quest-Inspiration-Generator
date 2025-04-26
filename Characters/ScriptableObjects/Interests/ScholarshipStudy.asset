@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e1c0c123a5b75bb4176bb1303851d, type: 3}
   m_Name: ScholarshipStudy
   m_EditorClassIdentifier: 
-  description: Scholarship / Study
+  description: Study and Scholarship
   requiremnt:
   - trait: 0
     value: 5
