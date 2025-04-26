@@ -23,7 +23,7 @@ public class PersonalityTraitList : ScriptableObject {
 
     [ContextMenu("Initialize")]
     public void Init() {
-        data.Sort();
+        data?.Sort();
     }
 
 
