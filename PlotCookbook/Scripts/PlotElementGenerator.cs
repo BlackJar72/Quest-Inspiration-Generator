@@ -16,8 +16,9 @@ public class PlotElementGenerator : ScriptableObject
         StringBuilder results   = new StringBuilder(Environment.NewLine + "<B><U>" + header + "</U></B>" + Environment.NewLine);
         StringBuilder resultsUF = new StringBuilder(Environment.NewLine + header + Environment.NewLine);
         for(int i = 0; i < tables.Count; i++) {
-            results.Append(tables[i].Roll()[0]);
-            resultsUF.Append(tables[i].Roll()[1]);
+            string[] next = tables[i].Roll();
+            results.Append(next[0]);
+            resultsUF.Append(next[1]);
         }
         results.Append(Environment.NewLine);
         resultsUF.Append(Environment.NewLine);

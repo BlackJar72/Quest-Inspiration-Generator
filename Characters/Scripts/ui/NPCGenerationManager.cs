@@ -4,6 +4,7 @@ using Crosstales.FB;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
 
 
 public class NPCGenerationManager : MonoBehaviour {
@@ -20,7 +21,9 @@ public class NPCGenerationManager : MonoBehaviour {
     [SerializeField] TMP_InputField proChanceField;
     [SerializeField] TMP_InputField bgChanceField;
     [SerializeField] TMP_InputField bothChanceField;
-    [SerializeField] TMP_InputField narrativeChanceField;
+    [SerializeField] TMP_InputField batchSizeField;
+    [SerializeField] GameObject batchSizeUI;
+    [SerializeField] Toggle batchModeToggle;
 
     [SerializeField] TextMeshProUGUI outputText;
     [SerializeField] GameObject[] saveButtons;
@@ -32,7 +35,9 @@ public class NPCGenerationManager : MonoBehaviour {
     [SerializeField] int proChance;
     [SerializeField] int bgChance;
     [SerializeField] int bothChance;
-    [SerializeField] int narrativeChance;
+    [SerializeField] int batchSize;
+
+    private bool batchMode = false;
 
     private Personality personality;
 
@@ -51,7 +56,7 @@ public class NPCGenerationManager : MonoBehaviour {
         proChanceField.text = proChance.ToString();
         bgChanceField.text = bgChance.ToString();
         bothChanceField.text = bothChance.ToString();
-        narrativeChanceField.text = narrativeChance.ToString();
+        batchSizeField.text = batchSize.ToString();
     }
 
 
@@ -95,7 +100,12 @@ public class NPCGenerationManager : MonoBehaviour {
     public  void SetProChance(string number) => SetNumtSetting(number, ref proChance, proChanceField);
     public  void SetBgChance(string number) => SetNumtSetting(number, ref bgChance, bgChanceField);
     public  void SetBothChance(string number) => SetNumtSetting(number, ref bothChance, bothChanceField);
-    public  void SetNarrativeChance(string number) => SetNumtSetting(number, ref narrativeChance, narrativeChanceField);
+
+    public  void SetBatchSize(string number) {
+        SetNumtSetting(number, ref batchSize, batchSizeField);
+        if(batchSize < 1) maxInterest = 1;
+        batchSizeField.text = batchSize.ToString();
+    }
 
 
     public void GenerateCharacter() {
@@ -113,20 +123,56 @@ public class NPCGenerationManager : MonoBehaviour {
             }
         }
         lastOutput = personality.GetResults();
-        if(narrativeChance < Random.Range(0, 100)) {
-            // TODO!!!
-        }
-        lastOutput[0].Append("<BR>").Append(System.Environment.NewLine);
-        lastOutput[1].Append(System.Environment.NewLine)
-                     .Append("******************************************************************************************************")
-                     .Append(System.Environment.NewLine);
         outputText.text = lastOutput[0].ToString();
     }
 
 
+    public void GenerateBatchCharacters() {
+        lastOutput = new StringBuilder[2];
+        lastOutput[0] = new StringBuilder();
+        lastOutput[1] = new StringBuilder("******************************************************************************************************");
+        lastOutput[1].Append(System.Environment.NewLine);
+        for(int i = 0; i < batchSize; i++) {
+            lastOutput[1].Append((i + 1) + " ");
+            personality = new Personality(traitList, minTraits, maxTraits);
+            personality.AddIntersts(interestList, minInterest, maxInterest);
+            if(Random.Range(0, 100) < bothChance) {
+                personality.AddProfession(profesionList);
+                personality.AddBackground(backgroundList);
+            } else {
+                if(Random.Range(0, 100) < proChance) {
+                    personality.AddProfession(profesionList);
+                }
+                if(Random.Range(0, 100) < bgChance) {
+                    personality.AddBackground(backgroundList);
+                }
+            }
+            StringBuilder[] tmp = personality.GetResults();
+            lastOutput[0].Append(tmp[0].ToString());
+            lastOutput[1].Append(tmp[1].ToString());
+            lastOutput[0].Append("<BR>").Append(System.Environment.NewLine);
+            lastOutput[1].Append(System.Environment.NewLine)
+                        .Append("******************************************************************************************************")
+                        .Append(System.Environment.NewLine);
+
+        }
+        SaveRstults();
+    }
+
+
+    public void ToggleBatchMode() {
+        batchMode = batchModeToggle.isOn;
+        batchSizeUI.SetActive(batchMode);
+    }
+
+
     public void Generate() {
-        GenerateCharacter();
-        saveButtons[0].SetActive(true);
+        if(batchMode) {
+            GenerateBatchCharacters();
+        } else {
+            GenerateCharacter();
+            saveButtons[0].SetActive(true);
+        }
     }
 
 

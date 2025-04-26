@@ -1,9 +1,8 @@
 using System.Collections.Generic;
-using UnityEditor;
+using UnityEngine;
 
 #if UNITY_EDITOR
-using UnityEngine;
-using UnityEngine.InputSystem.Interactions;
+using UnityEditor;
 #endif
 
 
@@ -16,6 +15,7 @@ public class PersonalityTraitList : ScriptableObject {
     [SerializeField] List<PersonalityTrait> data;
 
 
+#if UNITY_EDITOR
     void Awake()
     {
         Init();
@@ -26,6 +26,7 @@ public class PersonalityTraitList : ScriptableObject {
     public void Init() {
         data?.Sort();
     }
+#endif
 
 
     public List<PersonalityTrait> RollTraits(CorePersonality core, int min, int max) {

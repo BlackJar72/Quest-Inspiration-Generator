@@ -45,8 +45,8 @@ public class Personality {
 
     public StringBuilder[] GetResults() {
         StringBuilder[] output = new StringBuilder[2];
-        StringBuilder results   = new StringBuilder(Environment.NewLine + "<B><U>" + header + "</U></B>" + Environment.NewLine);
-        StringBuilder resultsUF = new StringBuilder(Environment.NewLine + header + Environment.NewLine);
+        StringBuilder results   = new StringBuilder(Environment.NewLine + "<B><U>" + header + "</U></B><BR>" + Environment.NewLine);
+        StringBuilder resultsUF = new StringBuilder(Environment.NewLine + header + Environment.NewLine + Environment.NewLine);
         GetStringFromCoreTraits(results, resultsUF);
         if((traits != null) && (traits.Count > 0)) GetStringFromTraits(results, resultsUF, traits, "Traits");
         if((interests != null) && (interests.Count > 0)) GetStringFromTraits(results, resultsUF, interests, "Interests");
