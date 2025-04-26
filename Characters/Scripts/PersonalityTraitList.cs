@@ -12,6 +12,7 @@ using UnityEngine.InputSystem.Interactions;
 [CreateAssetMenu(menuName = "KF Tools/NPC Roller/Trait Table", fileName = "TraitTable", order = 102)]
 public class PersonalityTraitList : ScriptableObject {
 
+    [SerializeField] PersonalityTraitList earlierList;
     [SerializeField] List<PersonalityTrait> data;
 
 
@@ -33,6 +34,9 @@ public class PersonalityTraitList : ScriptableObject {
         List<PersonalityTrait> available = new();
         foreach(PersonalityTrait t in data) {
             if(core.IsCompatible(t)) available.Add(t);
+        }
+        if(earlierList != null) foreach(PersonalityTrait trait in earlierList.data) {
+            foreach(PersonalityTrait conficting in earlierList.data) available.Remove(conficting);
         }
         List<PersonalityTrait> result = new();
         for(int i = 0; i < num; i++) {

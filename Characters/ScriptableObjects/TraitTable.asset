@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b570156e45e336d85a49f94bfeafd1f5, type: 3}
   m_Name: TraitTable
   m_EditorClassIdentifier: 
+  earlierList: {fileID: 0}
   data:
   - {fileID: 11400000, guid: 22b23fd2fee0c0ff6a7a81e33f493ada, type: 2}
   - {fileID: 11400000, guid: 358e85cdb4ac0b61b98d4a8031125154, type: 2}

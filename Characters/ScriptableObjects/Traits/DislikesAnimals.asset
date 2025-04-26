@@ -19,3 +19,12 @@ MonoBehaviour:
     lessThan: 1
   conflicting:
   - {fileID: 11400000, guid: 25d4ef5339aeda76da2a34b803fe2baa, type: 2}
+  - {fileID: 11400000, guid: b8ae61384f9c7c0c59e3e7c47c20e29c, type: 2}
+  - {fileID: 11400000, guid: 5df73d48423f3c1f89c0a67cd7500ea4, type: 2}
+  - {fileID: 11400000, guid: 78e877361443cde9c991f1d049b31222, type: 2}
+  - {fileID: 11400000, guid: 13507766ff085c96d8acd87d00d26872, type: 2}
+  - {fileID: 11400000, guid: d41a6f24a911a773e9b96a14432bbe67, type: 2}
+  - {fileID: 11400000, guid: 67294c0873113738c8395a11057d2d22, type: 2}
+  - {fileID: 11400000, guid: 8ab5f856e92f6b96daed1d9063a3ac07, type: 2}
+  - {fileID: 11400000, guid: 3a6b382c05b1a2d899157b2b75f6fed0, type: 2}
+  - {fileID: 11400000, guid: d65d7b83b3b4de59b9f3e76929500a3b, type: 2}

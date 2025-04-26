@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b570156e45e336d85a49f94bfeafd1f5, type: 3}
   m_Name: SpecialBackgrounds
   m_EditorClassIdentifier: 
+  earlierList: {fileID: 11400000, guid: fcc81ecedd3a994e4af4199786af018e, type: 2}
   data:
   - {fileID: 11400000, guid: 82ade0eb76126047fa194475a452434d, type: 2}
   - {fileID: 11400000, guid: 45c3bce65e7bf4456b24c24d61e57d5d, type: 2}

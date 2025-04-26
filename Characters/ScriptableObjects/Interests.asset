@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b570156e45e336d85a49f94bfeafd1f5, type: 3}
   m_Name: Interests
   m_EditorClassIdentifier: 
+  earlierList: {fileID: 11400000, guid: fcc81ecedd3a994e4af4199786af018e, type: 2}
   data:
   - {fileID: 11400000, guid: 82bc03e2a1027b53d88b064373eeb7f9, type: 2}
   - {fileID: 11400000, guid: dbaa5cd34e2de4afdbd695967659080c, type: 2}

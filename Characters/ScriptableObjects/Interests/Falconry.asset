@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Falconry
   requiremnt: []
-  conflicting: []
+  conflicting:
+  - {fileID: 11400000, guid: 89f512614a5f3fe12b3225603f671bd7, type: 2}
