@@ -10,8 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e06e1c0c123a5b75bb4176bb1303851d, type: 3}
-  m_Name: Sailing
+  m_Name: Entertainer
   m_EditorClassIdentifier: 
-  description: Sailing
-  requiremnt: []
+  description: Entertainer
+  requiremnt:
+  - trait: 2
+    value: 5
+    lessThan: 0
   conflicting: []
