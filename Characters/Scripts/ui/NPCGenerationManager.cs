@@ -126,7 +126,7 @@ public class NPCGenerationManager : MonoBehaviour {
 
     public void Generate() {
         GenerateCharacter();
-        // TODO: Generate Text
+        saveButtons[0].SetActive(true);
     }
 
 

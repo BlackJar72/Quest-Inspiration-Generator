@@ -27,7 +27,6 @@ public class PCookbookManager : MonoBehaviour {
         lastOutput = generators[generatorSelected].Roll();
         saveButtons[0].SetActive(true);
         #if UNITY_EDITOR
-        Debug.Log(lastOutput[0]);
         #endif
         //TODO: Normal output forms
         outputText.SetText(lastOutput[0]);
