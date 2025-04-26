@@ -18,13 +18,6 @@ public class PCookbookManager : MonoBehaviour {
     readonly string[] htmlext    = { "html" };
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-
     public void SetGenerator(int which) {
         generatorSelected = which;
     }
@@ -34,6 +27,7 @@ public class PCookbookManager : MonoBehaviour {
         lastOutput = generators[generatorSelected].Roll();
         saveButtons[0].SetActive(true);
         #if UNITY_EDITOR
+        Debug.Log(lastOutput[0]);
         #endif
         //TODO: Normal output forms
         outputText.SetText(lastOutput[0]);

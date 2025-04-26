@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 91964b718a1af3c75a312c887fd5efab, type: 3}
-  m_Name: NPCs
+  m_Name: NarrativeRole
   m_EditorClassIdentifier: 
-  tableName: NPCs
+  name: Neutral or Allied NPCs
   die: 200
   data:
   - description: Absent Minded Expert

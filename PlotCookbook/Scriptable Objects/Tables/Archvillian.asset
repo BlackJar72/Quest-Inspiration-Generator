@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91964b718a1af3c75a312c887fd5efab, type: 3}
   m_Name: Archvillian
   m_EditorClassIdentifier: 
-  name: Main Villain
+  tableName: Main Villain
   die: 140
   data:
   - description: Agent Provacaeur

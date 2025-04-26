@@ -130,5 +130,26 @@ public class NPCGenerationManager : MonoBehaviour {
     }
 
 
+    public void SaveRstults() {
+        if((lastOutput == null) || (lastOutput[1] == null) || (lastOutput[1].ToString() == "")) return;
+        byte[] data = lastOutput[1].ToString().CTToByteArray();
+        FileBrowser.Instance.CurrentSaveFileData = data;
+        #if UNITY_STANDALONE_WIN
+        string path = FileBrowser.Instance.SaveFile("Save Inspiration",
+                Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
+                "CharacterIdea", extensions);
+        #else
+        string path = FileBrowser.Instance.SaveFile("Save Inspiration",
+                System.Environment.GetFolderPath(System.Environment.SpecialFolder.UserProfile),
+                "CharacterIdea", extensions);
+        #endif
+}
+
+
+    public void Quit() {
+        Application.Quit();
+    }
+
+
 
 }

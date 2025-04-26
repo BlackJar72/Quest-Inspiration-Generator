@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91964b718a1af3c75a312c887fd5efab, type: 3}
   m_Name: Hooks
   m_EditorClassIdentifier: 
-  name: Hooks
+  tableName: Hooks
   die: 100
   data:
   - description: Dying Delivery
