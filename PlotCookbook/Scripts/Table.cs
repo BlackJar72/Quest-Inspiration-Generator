@@ -5,11 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "KF Tools/Table Roller/Table", fileName = "Table", order = 002)]
 public class Table : ScriptableObject
 {
-    [SerializeField] string name;
+    [SerializeField] string tableName;
     [SerializeField] int die;
     [SerializeField] List<TableItem> data;
 
-    public string Name { get => name; }
+    public string Name { get => tableName; }
 
     void Start() => Init();
 
