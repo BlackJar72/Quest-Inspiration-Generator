@@ -1,8 +1,8 @@
-using System;
 using Crosstales;
 using Crosstales.FB;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 
 public class NPCGenerationManager : MonoBehaviour {
@@ -59,7 +59,7 @@ public class NPCGenerationManager : MonoBehaviour {
         int result = value;
         try {
             result = int.Parse(number);
-        } catch(Exception e) {
+        } catch {
             field.text = value.ToString();
         }
         if(result == Mathf.Clamp(result, 0, 100)) value = result;
@@ -67,10 +67,30 @@ public class NPCGenerationManager : MonoBehaviour {
     }
 
 
-    public  void SetMinTraits(string number) => SetNumtSetting(number, ref minTraits, minTraitsField);
-    public  void SetMaxTraits(string number) => SetNumtSetting(number, ref maxTraits, maxTraitsField);
-    public  void SetMinInterests(string number) => SetNumtSetting(number, ref minInterest, minInterestField);
-    public  void SetMaxInterests(string number) => SetNumtSetting(number, ref maxInterest, maxInterestField);
+    public  void SetMinTraits(string number) {
+        SetNumtSetting(number, ref minTraits, minTraitsField);
+        if(minTraits > maxTraits) minTraits = maxTraits;
+        minTraitsField.text = minTraits.ToString();
+    }
+
+    public  void SetMaxTraits(string number) {
+        SetNumtSetting(number, ref maxTraits, maxTraitsField);
+        if(maxTraits < minTraits) maxTraits = minTraits;
+        maxTraitsField.text = maxTraits.ToString();
+    }
+
+    public  void SetMinInterests(string number) {
+        SetNumtSetting(number, ref minInterest, minInterestField);
+        if(minInterest > maxInterest) minInterest = maxInterest;
+        minInterestField.text = minInterest.ToString();
+    }
+
+    public  void SetMaxInterests(string number) {
+        SetNumtSetting(number, ref maxInterest, maxInterestField);
+        if(maxInterest < minInterest) maxInterest = minInterest;
+        maxInterestField.text = maxInterest.ToString();
+    }
+
     public  void SetProChance(string number) => SetNumtSetting(number, ref proChance, proChanceField);
     public  void SetBgChance(string number) => SetNumtSetting(number, ref bgChance, bgChanceField);
     public  void SetBothChance(string number) => SetNumtSetting(number, ref bothChance, bothChanceField);
@@ -78,7 +98,31 @@ public class NPCGenerationManager : MonoBehaviour {
 
 
     public void GenerateCharacter() {
-        
+        personality = new Personality(traitList, minTraits, maxTraits);
+        if(bothChance < Random.Range(0, 100)) {
+            if(Random.Range(0, 5) == 0) personality.AddProfession(profesionList, 1,2);
+            else personality.AddProfession(profesionList, 1, 1);
+            if(Random.Range(0, 2) == 0) personality.AddProfession(profesionList, 1,2);
+            else personality.AddProfession(profesionList, 1, 1);
+        } else {
+            if(proChance < Random.Range(0, 100)) {
+                if(Random.Range(0, 5) == 0) personality.AddProfession(profesionList, 1,2);
+                else personality.AddProfession(profesionList, 1, 1);
+            }
+            if(bgChance < Random.Range(0, 100)) {
+                if(Random.Range(0, 2) == 0) personality.AddProfession(profesionList, 1,2);
+                else personality.AddProfession(profesionList, 1, 1);
+            }
+        }
+        if(narrativeChance < Random.Range(0, 100)) {
+            // TODO!!!
+        }
+    }
+
+
+    public void Generate() {
+        GenerateCharacter();
+        // TODO: Generate Text
     }
 
 
