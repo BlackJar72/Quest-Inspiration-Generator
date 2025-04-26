@@ -220,7 +220,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1698134020}
+        m_TargetAssemblyTypeName: NPCGenerationManager, Assembly-CSharp
+        m_MethodName: SetBgChance
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -769,7 +781,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1698134020}
+        m_TargetAssemblyTypeName: NPCGenerationManager, Assembly-CSharp
+        m_MethodName: SetMaxInterests
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -3288,7 +3312,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1698134020}
+        m_TargetAssemblyTypeName: NPCGenerationManager, Assembly-CSharp
+        m_MethodName: SetBothChance
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -4191,7 +4227,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1698134020}
+        m_TargetAssemblyTypeName: NPCGenerationManager, Assembly-CSharp
+        m_MethodName: SetMaxTraits
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -4649,7 +4697,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1698134016}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PCookbookManager, Assembly-CSharp
         m_MethodName: Generate
         m_Mode: 1
@@ -7121,7 +7169,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1698134020}
+        m_TargetAssemblyTypeName: NPCGenerationManager, Assembly-CSharp
+        m_MethodName: SetMinInterests
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -7992,7 +8052,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1698134016}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PCookbookManager, Assembly-CSharp
         m_MethodName: ExitApp
         m_Mode: 1
@@ -8143,7 +8203,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1698134020}
+        m_TargetAssemblyTypeName: NPCGenerationManager, Assembly-CSharp
+        m_MethodName: SetMinTraits
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -8551,7 +8623,7 @@ GameObject:
   - component: {fileID: 1698134019}
   - component: {fileID: 1698134018}
   - component: {fileID: 1698134017}
-  - component: {fileID: 1698134016}
+  - component: {fileID: 1698134020}
   m_Layer: 5
   m_Name: Plot Cookbock Controls
   m_TagString: Untagged
@@ -8559,25 +8631,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1698134016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698134015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9603c7d399c81452a03efa4af7b0ffa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  generators:
-  - {fileID: 11400000, guid: 856b957d5a51369f4b763be89355f585, type: 2}
-  - {fileID: 11400000, guid: 68002e05d008a3d79a157b8ae638ac63, type: 2}
-  - {fileID: 11400000, guid: b88e89936bb171be6ad635800a929b72, type: 2}
-  outputText: {fileID: 1703431574}
-  saveButtons:
-  - {fileID: 2038814285}
 --- !u!114 &1698134017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8640,6 +8693,40 @@ RectTransform:
   m_AnchoredPosition: {x: 138.651, y: 0}
   m_SizeDelta: {x: 266.302, y: -6}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1698134020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698134015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16503ac81419798428d6234f83496cc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traitList: {fileID: 11400000, guid: fcc81ecedd3a994e4af4199786af018e, type: 2}
+  interestList: {fileID: 11400000, guid: 4dbe1791b9bb241c2a8a9b58ce572df6, type: 2}
+  profesionList: {fileID: 11400000, guid: 083624a5077eaff5299cf40e8814f84e, type: 2}
+  backgroundList: {fileID: 11400000, guid: 6d6fade4cdac44020afdab16a2f95338, type: 2}
+  minTraitsField: {fileID: 1495554092}
+  maxTraitsField: {fileID: 819059802}
+  minInterestField: {fileID: 1298168894}
+  maxInterestField: {fileID: 108642598}
+  proChanceField: {fileID: 1720038813}
+  bgChanceField: {fileID: 17362714}
+  bothChanceField: {fileID: 636556175}
+  narrativeChanceField: {fileID: 1993303293}
+  outputText: {fileID: 1703431574}
+  saveButtons: []
+  minTraits: 3
+  maxTraits: 7
+  minInterest: 2
+  maxInterest: 5
+  proChance: 20
+  bgChance: 20
+  bothChance: 10
+  narrativeChance: 20
 --- !u!1 &1703431573
 GameObject:
   m_ObjectHideFlags: 0
@@ -8773,7 +8860,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -8.875001, y: 8.499984}
+  m_AnchoredPosition: {x: -8.875038, y: 8.500017}
   m_SizeDelta: {x: -16.25, y: -17.001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1707274479
@@ -8946,7 +9033,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1698134020}
+        m_TargetAssemblyTypeName: NPCGenerationManager, Assembly-CSharp
+        m_MethodName: SetProChance
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -10385,7 +10484,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1698134020}
+        m_TargetAssemblyTypeName: NPCGenerationManager, Assembly-CSharp
+        m_MethodName: SetNarrativeChance
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -10545,8 +10656,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 616652286}
   m_HandleRect: {fileID: 616652285}
   m_Direction: 0
-  m_Value: 1
-  m_Size: 0.9988611
+  m_Value: 1.0000814
+  m_Size: 0.9987894
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10672,7 +10783,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1698134016}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PCookbookManager, Assembly-CSharp
         m_MethodName: SaveRstults
         m_Mode: 1
@@ -10894,7 +11005,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 171231155}
   m_HandleRect: {fileID: 171231154}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -11002,7 +11113,7 @@ GameObject:
   - component: {fileID: 2087417174}
   - component: {fileID: 2087417173}
   m_Layer: 5
-  m_Name: Cookbook Output
+  m_Name: Character Output
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

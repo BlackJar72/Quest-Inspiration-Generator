@@ -1,12 +1,11 @@
-using System.Text;
 using System;
 using Crosstales;
 using Crosstales.FB;
 using TMPro;
 using UnityEngine;
 
-public class PCookbookManager : MonoBehaviour
-{
+
+public class PCookbookManager : MonoBehaviour {
     [SerializeField] PlotElementGenerator[] generators;
     [SerializeField] TextMeshProUGUI outputText;
     [SerializeField] GameObject[] saveButtons;
