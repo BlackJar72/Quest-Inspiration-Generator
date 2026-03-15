@@ -1,5 +1,7 @@
 # Quest Inspiration Generator
 
+## Do to the flurry of new age verification laws I do not have the infrastructure to comply with, I will not be making or working on videogames or any other standalone software applications. ##
+
 This is a simple app that rolls on some random tables containing a mix of 
 both archetypes and tropes to act as inspiration for RPG adventures.
 
